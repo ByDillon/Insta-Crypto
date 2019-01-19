@@ -64,9 +64,8 @@
 
 		<mark id="message"></mark>
 
-		<form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
 
-			<fieldset>
+
 
 				<legend>Connect With Our Platform</legend>
 
@@ -87,7 +86,7 @@
 
 				<div>
 					<label for="website" accesskey="W">Slack Username <small>(optional)</small></label>
-					<input name="website" type="url" id="website" placeholder="Enter your website address" />
+					<input name="slackuser" type="text" id="slackuser" placeholder="Enter your website address" />
 				</div>
 				<div>
 					<label for="website" accesskey="W">Website <small>(optional)</small></label>
@@ -106,7 +105,7 @@
 
 				<legend>Are you human?</legend>
 
-				<label for="verify" accesskey="V" class="verify"><img src="image.php" alt="Verification code" /></label>
+				<!-- <label for="verify" accesskey="V" class="verify"><img src="image.php" alt="Verification code" /></label> -->
 				<input name="verify" type="text" id="verify" size="6" required="required" style="width: 50px;" title="This confirms you are a human user and not a spam-bot." />
 
 			</fieldset>
@@ -126,8 +125,9 @@
 </footer>
 
 
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js" ></script>
+<script src="main.js"></script>
 
 </body>
 </html>
