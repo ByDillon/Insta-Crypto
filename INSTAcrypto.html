@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
+  
  
 </head>
 <body>
@@ -57,6 +58,66 @@
     </div>
   </div>
 </div>
+
+<div class="form">    
+  <section id="contact">
+
+		<mark id="message"></mark>
+
+		<form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
+
+			<fieldset>
+
+				<legend>Connect With Our Platform</legend>
+
+				<div>
+					<label for="name" accesskey="U">Your Name</label>
+					<input name="name" type="text" id="name" placeholder="Enter your name" required="required" />
+				</div>
+				<div>
+					<label for="email" accesskey="E">Email</label>
+					<input name="email" type="email" id="email" placeholder="Enter your Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$"
+					 required="required" />
+				</div>
+
+				<div>
+					<label for="phone" accesskey="P">Phone <small>(optional)</small></label>
+					<input name="phone" type="tel" id="phone" size="30" placeholder="Enter your phone number" />
+				</div>
+
+				<div>
+					<label for="website" accesskey="W">Slack Username <small>(optional)</small></label>
+					<input name="website" type="url" id="website" placeholder="Enter your website address" />
+				</div>
+				<div>
+					<label for="website" accesskey="W">Website <small>(optional)</small></label>
+					<input name="website" type="url" id="website" placeholder="Enter your website address" />
+				</div>
+				<div>
+					<label for="website" accesskey="W">Website <small>(optional)</small></label>
+					<input name="website" type="url" id="website" placeholder="Enter your website address" />
+				</div>
+
+			</fieldset>
+
+		
+
+			<fieldset>
+
+				<legend>Are you human?</legend>
+
+				<label for="verify" accesskey="V" class="verify"><img src="image.php" alt="Verification code" /></label>
+				<input name="verify" type="text" id="verify" size="6" required="required" style="width: 50px;" title="This confirms you are a human user and not a spam-bot." />
+
+			</fieldset>
+
+			<input type="submit" class="submit" id="submit" value="Submit" />
+
+		</form>
+
+	</section>
+
+
 
 
 
