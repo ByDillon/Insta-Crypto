@@ -29,9 +29,22 @@
 		  padding: 15px;
 		}
 		.row.content {height:auto;} 
-	  }
-	
-	  
+		}
+		
+		form {
+			text-align: center;
+		}
+		#contact p,
+		label,
+		legend {
+			font: 1.5em "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+		}
+		mark.validate {
+			display: inline-block;
+			margin: 12px 0 0 10px;
+			width: 16px;
+			height: 16px;
+			background: transparent none;
+		}
 
-	  
-	 
+
