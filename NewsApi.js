@@ -7,11 +7,12 @@ $.ajax({
   }).then(function(response) {
     console.log(response.articles);
     for (var i = 0 ; i < response.articles.length; i++){
-    var ptemplate = `<p> Articles:${response.articles[i].content} </p>`
+    var ptemplate = `<p> Articles:${response.articles[i].content} </p>
+    <p><a href="${response.articles[i].url}">${response.articles[i].url}</a></p>`
+    console.log("here is the template")
     console.log(ptemplate);
     $('#first').append(ptemplate);
          
     }
   
   });
-  
