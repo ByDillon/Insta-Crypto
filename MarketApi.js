@@ -27,10 +27,7 @@ $.ajax({
     var ptemplate = `<p> Low ${_Marketresponse.DISPLAY.LOW24HOUR} </p>`
     $('#low24hour').append(ptemplate);
     
-var $newRow = $("<tr>")
-           .append("<td>" + _Marketresponse.DISPLAY.FROMSYMBOL + "</td><td>" + _Marketresponse.DISPLAY.PRICE + "</td><td>" + _Marketresponse.DISPLAY.HIGH24HOUR + "</td><td>" + _Marketresponse.DISPLAY.LOW24HOUR )
-           .appendTo($("#trainTbl > tbody"));
-           console.log(newRow)
+           $('#coinsTable').append("<tr><td>" + _Marketresponse.DISPLAY.FROMSYMBOL + "</td><td>" + _Marketresponse.DISPLAY.PRICE + "</td><td>" + _Marketresponse.DISPLAY.HIGH24HOUR + "</td><td>" + _Marketresponse.DISPLAY.LOW24HOUR + "</td></tr>")
      
  })
  
