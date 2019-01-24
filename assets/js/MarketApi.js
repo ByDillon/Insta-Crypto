@@ -20,7 +20,7 @@ $.ajax({
      console.log(_Marketresponse);
 const {FROMSYMBOL, PRICE,HIGH24HOUR,LOW24HOUR} = _Marketresponse.DISPLAY    
 var $newRow =
-         `<tr><td>${FROMSYMBOL}</td><td>${PRICE}</td>${HIGH24HOUR}</td><td>${LOW24HOUR}</td></tr>`
+         `<tr><td>${FROMSYMBOL}</td><td>${PRICE}</td><td>${HIGH24HOUR}</td><td>${LOW24HOUR}</td></tr>`
            console.log($newRow);
            $('#coinsBody').append($newRow);
      
