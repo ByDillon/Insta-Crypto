@@ -61,5 +61,10 @@
 			font-size: 12px;
 
 
+
 		}
 		
+		.col-sm-3.sidenav {
+			height: 1000px;
+			
+		}
