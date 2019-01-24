@@ -18,19 +18,11 @@ $.ajax({
    method: "GET"
  }).then(function(_Marketresponse) {
      console.log(_Marketresponse);
-     var ptemplate = `<p> Price ${_Marketresponse.DISPLAY.PRICE} </p>`
-    $('#price').append(ptemplate);
-    var ptemplate = `<p> Symbol ${_Marketresponse.DISPLAY.FROMSYMBOL} </p>`
-    $('#fromsymbol').append(ptemplate);
-    var ptemplate = `<p> High ${_Marketresponse.DISPLAY.HIGH24HOUR} </p>`
-    $('#high24hour').append(ptemplate);
-    var ptemplate = `<p> Low ${_Marketresponse.DISPLAY.LOW24HOUR} </p>`
-    $('#low24hour').append(ptemplate);
-    
+const {FROMSYMBOL, PRICE,HIGH24HOUR,LOW24HOUR} = _Marketresponse.DISPLAY    
 var $newRow = $("<tr>")
-           .append("<td>" + _Marketresponse.DISPLAY.FROMSYMBOL + "</td><td>" + _Marketresponse.DISPLAY.PRICE + "</td><td>" + _Marketresponse.DISPLAY.HIGH24HOUR + "</td><td>" + _Marketresponse.DISPLAY.LOW24HOUR )
+           .append("<td>" + FROMSYMBOL + "</td><td>" + PRICE + "</td><td>" + HIGH24HOUR + "</td><td>" + LOW24HOUR )
            .appendTo($("#trainTbl > tbody"));
-           console.log(newRow)
+           console.log($newRow)
      
  })
  
