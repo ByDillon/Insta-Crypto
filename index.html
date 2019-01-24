@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
  
 </head>
@@ -26,11 +26,12 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
         <li><a href="#">Crypto Slack Bot</a></li>
-        <li><a href="#">Donate</a></li>
-        <li><a href="#">Release Notes</a></li>
-        <li><a href="#">Advertise</a></li>
+        <li><a href="#">About</a></li>
+     
+        <!-- <li><a href="#">Donate</a></li> -->
+        <!-- <li><a href="#">Release Notes</a></li> -->
+        <!-- <li><a href="#">Advertise</a></li> -->
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -47,7 +48,7 @@
       
      
           <!-- Table -->
-          <table class="table table-hover table-striped" id="trainTbl">
+          <table class="table table-hover table-striped" id="coinsTbl">
           
               <tr>
                   <th>Symbol</th>
@@ -58,7 +59,7 @@
             
               
 
-              <tbody>
+              <tbody id="coinsBody">
 
                   <!--add trains here-->
               </tbody>
@@ -73,12 +74,17 @@
 
       <div id='first'></div>
     </div>
+   
     <div class="col-sm-3 sidenav">
       <div class="well">
-        <p>advertisement space</p>
+       
+        <div class='ad'>
+        <img src="https://cdn-az.allevents.in/banners/d67d0260-cc10-11e8-81c9-1b431fd718bc-rimg-w1200-h600-dce4dcdb-gmir.jpg"style="width:300px;height:175px;">  
+        <a href="https://www.w3schools.com/html/"></a>
+        </div>
         </div>
       <div class="well">
-        <p>advertisement space</p>
+        <img src="https://blockonomi-9fcd.kxcdn.com/wp-content/uploads/2018/06/coinbase-ethereum-classic.jpg"style="width:300px;height:175px;">
       </div>
     </div>
  
@@ -144,18 +150,20 @@
 
 
 
-
-
-<footer class="fixed-bottom">
-  <p>© Group 5 Class Project. All Rights Reserved UCF CODING BOOTCAMP</p>
-</footer>
+  <div class="bottom">
+    <footer>
+      <p>© Group 5 Class Project. All Rights Reserved UCF CODING BOOTCAMP</p>
+    </footer>
+  </div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js" ></script>
-<script src="main.js"></script>
-<script src="MarketApi.js"></script>
-<script src="NewsApi.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/NewsApi.js"></script>
+<script src="assets/js/MarketApi.js"></script>
 
-</body>
+
+
+</body> 
 </html>
