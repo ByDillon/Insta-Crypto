@@ -15,16 +15,19 @@
 	  }
 	  
 	  /* Set black background color, white text and some padding */
-	  footer {
-		background-color: #555;
-		color: white;
-		padding: 15px;
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-		left: 0;
+	  .bottom {
+			background-color: #555;
+			color: white;
+			padding: 15px;
+		  position: relative;
+			bottom: 0;
+			width: 100%;
+			left: 0;
+			opacity: 0.5;
+			margin-top: 20px;
+			border-radius: 0;
+	
 	  }
-
 	  
 	  /* On small screens, set height to 'auto' for sidenav and grid */
 	  @media screen and (max-width: 767px) {
@@ -54,11 +57,11 @@
 
 
 		.col-sm-6.text-left {
-			font-size: 12px;
+			font-size: 14px;
 		}
 
 		.table.table-hover.table-striped {
-			font-size: 12px;
+			font-size: 11px;
 
 
 
@@ -66,5 +69,6 @@
 		
 		.col-sm-3.sidenav {
 			height: 1000px;
+		
 			
 		}
