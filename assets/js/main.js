@@ -43,7 +43,7 @@ console.log('button clicked')
 
   // Firebase watcher + initial loader HINT: This code behaves similarly to .on("value") to use in the email server
   // TODO work on automatically emailing new customers.
-  dataRef.ref().on("child_added", function(childSnapshot) {
+  //dataRef.ref().on("child_added", function(childSnapshot) {
 
     // Log everything that's coming out of snapshot
     //console.log(childSnapshot.val().name);
@@ -53,15 +53,11 @@ console.log('button clicked')
    
 
     // full list of items to the use for the email server
-    $("#full-member-list").append("<div class='well'><span class='member-name'> " +
-      childSnapshot.val().name +
-      " </span><span class='member-email'> " + childSnapshot.val().email +
-      " </span><span class='member-age'> " + childSnapshot.val().slackuser +
-      " </span><span class='member-comment'> " + childSnapshot.val().website +
-      " </span></div>");
+
+    // call backend to send the email to invite the new customer to use the slack bot
 
     // Handle the errors
-  }, function(errorObject) {
-    console.log("Errors handled: " + errorObject.code);
-  });
+ // }, function(errorObject) {
+  //  console.log("Errors handled: " + errorObject.code);
+ // });
 

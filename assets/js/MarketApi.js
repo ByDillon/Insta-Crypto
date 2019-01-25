@@ -12,12 +12,9 @@ for (var i = 0; i < symbolArray.length; i++){
       url: url,
       method: "GET"
    }).then(function(_Marketresponse) {
-      const {FROMSYMBOL, PRICE,HIGH24HOUR,LOW24HOUR,CHANGE24HOUR} = _Marketresponse.RAW  
-      var dailydifference = parseInt(HIGH24HOUR) - parseInt(LOW24HOUR)
-      //var dailypercent = dailydifference / 100 
-      CHANGE24HOUR = CHANGE24HOUR.toFixed(2);
+      const {FROMSYMBOL, PRICE,HIGH24HOUR,LOW24HOUR,CHANGE24HOUR} = _Marketresponse.DISPLAY  
       var $newRow =
-         `<tr><td>${FROMSYMBOL}</td><td>$${PRICE}</td><td>$${HIGH24HOUR}</td><td>$${LOW24HOUR}</td><<td>$${CHANGE24HOUR}   </td></tr>`
+         `<tr><td>${FROMSYMBOL}</td><td>${PRICE}</td><td>${HIGH24HOUR}</td><td>${LOW24HOUR}</td><<td>${CHANGE24HOUR}</td></tr>`
            $('#coinsBody').append($newRow);
           
  })
