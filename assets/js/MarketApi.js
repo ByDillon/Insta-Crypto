@@ -5,7 +5,6 @@ var symbolArray = ["BTC", "ETH", "BCH", "XRP", "EOS","LTC", "USDT", "XLM", "TRX"
 //looping thru the symbolAarry to call the api for each coin to get the Market infomation.
 for (var i = 0; i < symbolArray.length; i++){
    var coinSymbol = symbolArray[i];
-   console.log('coinsymbol ' + coinSymbol);
    var averageMarketurl = `https://min-api.cryptocompare.com/data/generateAvg?fsym=${coinSymbol}&tsym=USD&e=Kraken&api_key=${apikey}`
    var url = averageMarketurl;
    var req = new Request(url);
@@ -13,17 +12,13 @@ for (var i = 0; i < symbolArray.length; i++){
       url: url,
       method: "GET"
    }).then(function(_Marketresponse) {
-      console.log(_Marketresponse);
       const {FROMSYMBOL, PRICE,HIGH24HOUR,LOW24HOUR,CHANGE24HOUR} = _Marketresponse.RAW  
       var dailydifference = parseInt(HIGH24HOUR) - parseInt(LOW24HOUR)
-   //var dailypercent = dailydifference / 100 
-   CHANGE24HOUR = CHANGE24HOUR.toFixed(2);
+      //var dailypercent = dailydifference / 100 
+      CHANGE24HOUR = CHANGE24HOUR.toFixed(2);
       var $newRow =
          `<tr><td>${FROMSYMBOL}</td><td>$${PRICE}</td><td>$${HIGH24HOUR}</td><td>$${LOW24HOUR}</td><<td>$${CHANGE24HOUR}   </td></tr>`
-           console.log($newRow);
            $('#coinsBody').append($newRow);
-           console.log(HIGH24HOUR)
-           console.log(HIGH24LOW)
           
  })
  

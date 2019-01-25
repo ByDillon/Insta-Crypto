@@ -1,5 +1,3 @@
-console.log('we are in main.js')
-
 var config = {
     apiKey: "AIzaSyCNjzhAfRFzbxL-aQfPmIW6Xyv76r1xnWc",
     authDomain: "cryptodb-85aac.firebaseapp.com",
@@ -43,17 +41,18 @@ console.log('button clicked')
     });
   });
 
-  // Firebase watcher + initial loader HINT: This code behaves similarly to .on("value")
+  // Firebase watcher + initial loader HINT: This code behaves similarly to .on("value") to use in the email server
+  // TODO work on automatically emailing new customers.
   dataRef.ref().on("child_added", function(childSnapshot) {
 
     // Log everything that's coming out of snapshot
-    console.log(childSnapshot.val().name);
-    console.log(childSnapshot.val().email);
-    console.log(childSnapshot.val().slackuser);
-    console.log(childSnapshot.val().website);
+    //console.log(childSnapshot.val().name);
+    //console.log(childSnapshot.val().email);
+    //console.log(childSnapshot.val().slackuser);
+    //console.log(childSnapshot.val().website);
    
 
-    // full list of items to the well
+    // full list of items to the use for the email server
     $("#full-member-list").append("<div class='well'><span class='member-name'> " +
       childSnapshot.val().name +
       " </span><span class='member-email'> " + childSnapshot.val().email +
@@ -66,10 +65,3 @@ console.log('button clicked')
     console.log("Errors handled: " + errorObject.code);
   });
 
-  dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot) {
-    // Change the HTML to reflect
-    $("#name-display").text(snapshot.val().name);
-    $("#email-display").text(snapshot.val().email);
-    $("#age-display").text(snapshot.val().slackuser);
-    $("#comment-display").text(snapshot.val().website);
-  });
