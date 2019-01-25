@@ -22,9 +22,7 @@ var config = {
     event.preventDefault();
 console.log('button clicked')
 
-    // YOUR TASK!!!
-    // Code in the logic for storing and retrieving the most recent user.
-    // Don't forget to provide initial data to your Firebase database.
+    // retrieve the values from the fields on the form.
     name = $("#name").val().trim();
     email = $("#email").val().trim();
     slackuser = $("#slackuser").val().trim();
