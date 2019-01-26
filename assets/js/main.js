@@ -1,20 +1,13 @@
-/*var config = {
+var config = {
     apiKey: "AIzaSyCNjzhAfRFzbxL-aQfPmIW6Xyv76r1xnWc",
     authDomain: "cryptodb-85aac.firebaseapp.com",
     databaseURL: "https://cryptodb-85aac.firebaseio.com",
     projectId: "cryptodb-85aac",
     storageBucket: "cryptodb-85aac.appspot.com",
     messagingSenderId: "659868577105"
- };*/
+ };
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCz_i1aUkB0XO29cVTBHH6wtEUxW35urG8",
-    authDomain: "tasproj-71b1d.firebaseapp.com",
-    databaseURL: "https://tasproj-71b1d.firebaseio.com",
-    projectId: "tasproj-71b1d",
-    storageBucket: "tasproj-71b1d.appspot.com",
-    messagingSenderId: "763116673554"
-  };
+  
   firebase.initializeApp(config);
 
 
