@@ -4,7 +4,7 @@ const SlackBot = require('slackbots');
 const axios = require('axios');
 
 const bot = new SlackBot({
-    token: 'xoxb-527172988000-528115517669-9ddJ0sL5Z6XgoCeVqE0WQhv4',
+  token: '',
     name: 'instacrypto'
 });
 
