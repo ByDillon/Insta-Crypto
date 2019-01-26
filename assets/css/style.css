@@ -19,12 +19,13 @@
 			background-color: #555;
 			color: white;
 			padding: 15px;
-		  position: relative;
+		 position: fixed;
 			bottom: 0;
-			width: 100%;
+			width: 2020px;
+			height: 20px;
 			left: 0;
 			opacity: 0.5;
-			margin-top: 20px;
+			margin-top: 50px;
 			border-radius: 0;
 	
 	  }
