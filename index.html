@@ -42,11 +42,7 @@
   
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div class="col-sm-4 sidenav">
-      
-    
-      
-     
+    <div class="col-sm-4 sidenav">     
           <!-- Table -->
           <table class="table table-hover table-striped" id="coinsTbl">
           
@@ -55,26 +51,71 @@
                   <th>Price</th>
                   <th>24hr High</th>
                   <th>24hr Low</th>
-                  <th>Max Earning</th>
-        
-            
-              
-
+                  <th>Max Earning</th>       
               <tbody id="coinsBody">
 
-                  <!--add trains here-->
+                  <!--add coins here-->
               </tbody>
+            </tr>
           </table>
-      </div>
+    </div>
     
-
-  
     <div class="col-sm-5 text-left"> 
 
       <h1>INSTACrypto</h1>
 
-      <div id='first'></div>
+      <div class='row' id='first'></div>
+  <div class='row' >
+    <form method="post" action="" name="contactform" id="contactform" autocomplete="on">
+
+				<legend>Connect With Our Platform</legend>
+
+				<div>
+					<label for="name" accesskey="U">Your Name</label>
+          <input name="name" type="text" id="name" placeholder="Enter your name" required="required" />
+          <div id="nameerror" class="error"></div>
+				</div>
+				<div>
+					<label for="email" accesskey="E">Email</label>
+          <input name="email" type="email"  id="email" placeholder="Enter your Email Address" required="required" />
+          <div id="emailerror" class="error"></div>
+				</div>
+
+				<div>
+					<label for="phone" accesskey="P">Phone <small>(optional)</small></label>
+					<input name="phone" type="tel" id="phone" size="30" placeholder="Enter your phone number" />
+				</div>
+
+				<div>
+					<label for="slackuser" accesskey="W">Slack Username <small>(optional)</small></label>
+					<input name="slackuser" type="text" id="slackuser" placeholder="Enter your slack user" />
+        </div>
+        
+				<div>
+					<label for="website" accesskey="W">Website <small>(optional)</small></label>
+					<input name="website" type="url" id="website" placeholder="Enter your website address" />
+				</div>
+
+        <input type="submit" class="submit" id="submit" value="Submit" />
+
+
+		
+		</form>
+ </div>
+
+ <div class='row' >
+
+    <div id="bottom">
+        <footer>
+          <p>© Group 5 Class Project. All Rights Reserved UCF CODING BOOTCAMP</p>
+        </footer>
     </div>
+    
+  
+ </div>
+      
+    </div>
+
    
     <div class="col-sm-3 sidenav">
       <div class="well">
@@ -84,66 +125,18 @@
         </div>
         </div>
       <div class="well">
-        <a href="https://www.coinbase.com"><img src="https://blockonomi-9fcd.kxcdn.com/wp-content/uploads/2018/06/coinbase-ethereum-classic.jpg"style="width:300px;height:175px;">
+        <a href="https://www.coinbase.com"><img src="https://blockonomi-9fcd.kxcdn.com/wp-content/uploads/2018/06/coinbase-ethereum-classic.jpg"style="width:300px;height:175px;"></a>
       </div>
       <img src="assets/images/C.png"style="width:225px;height:225px;">
     </div>
  
 </div>
 
-<div class="form">    
-  <section id="contact">
 
-		<mark id="message"></mark>
-    <form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
-
-
-
-				<legend>Connect With Our Platform</legend>
-
-				<div>
-					<label for="name" accesskey="U">Your Name</label>
-					<input name="name" type="text" id="name" placeholder="Enter your name" required="required" />
-				</div>
-				<div>
-					<label for="email" accesskey="E">Email</label>
-					<input name="email" type="email" id="email" placeholder="Enter your Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$"
-					 required="required" />
-				</div>
-
-				<div>
-					<label for="phone" accesskey="P">Phone <small>(optional)</small></label>
-					<input name="phone" type="tel" id="phone" size="30" placeholder="Enter your phone number" />
-				</div>
-
-				<div>
-					<label for="website" accesskey="W">Slack Username <small>(optional)</small></label>
-					<input name="slackuser" type="text" id="slackuser" placeholder="Enter your website address" />
-				</div>
-				<div>
-					<label for="website" accesskey="W">Website <small>(optional)</small></label>
-					<input name="website" type="url" id="website" placeholder="Enter your website address" />
-				</div>
-				<div>
-					<label for="website" accesskey="W">Website <small>(optional)</small></label>
-					<input name="website" type="url" id="website" placeholder="Enter your website address" />
-				</div>
-
-
-
-		
-		</form>
-
-  </section>
+  </div>
   </div>
 
 
-
-  <div class="bottom">
-    <footer>
-      <p>© Group 5 Class Project. All Rights Reserved UCF CODING BOOTCAMP</p>
-    </footer>
-  </div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -1,18 +1,18 @@
 
-var url = 'https://newsapi.org/v2/top-headlines?sources=crypto-coins-news&apiKey=6bd40a7cdac8479ba618547b5afe8085';
+var apikey = "6bd40a7cdac8479ba618547b5afe8085"
+var url = `https://newsapi.org/v2/top-headlines?sources=crypto-coins-news&apiKey=${apikey}`;
 var req = new Request(url);
+// loop thru the JSON object to build a paragraph showing the article's description and url leading to the article.
 $.ajax({
     url: url,
     method: "GET"
-  }).then(function(response) {
-    console.log(response.articles);
-    for (var i = 0 ; i < response.articles.length; i++){
-    var ptemplate = `<p> Articles:${response.articles[i].content} </p>
-    <p><a href="${response.articles[i].url}">${response.articles[i].url}</a></p>`
-    console.log("here is the template")
-    console.log(ptemplate);
-    $('#first').append(ptemplate);
-         
+  }).then(function(Newsresponse) {
+    for (var i = 0 ; i < Newsresponse.articles.length; i++){
+      const {description, url} = Newsresponse.articles[i]
+      var ptemplate = `<p> Articles:${description} </p>
+      <p><a href="${url}" target="_blank" alt="coin article">${url}</a></p>`
+      $('#first').append(ptemplate);
+          
     }
   
   });
