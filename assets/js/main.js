@@ -26,6 +26,7 @@
   var phone = "";
   var slackuser = "";
   var website = "";
+  var errorCode = 0;
 
   // Capture Button Click
   $("#submit").on("click", function(event) {
@@ -38,14 +39,14 @@ console.log('button clicked')
     phone = $("#phone").val().trim();
     slackuser = $("#slackuser").val().trim();
     website = $("#website").val().trim();
-    
+    $("#nameerror").html("");
+    $("#emailerror").html("");
      var errorCode = validateEmail(email);
-     console.log(errorCode);
-     if (errorCode){
-       alert('bad email');
-     };
      if(name ==""){
-       alert('need name');
+      $("#nameerror").append("Please enter a name"); 
+     };
+     if (errorCode){
+      $("#emailerror").append("Please enter a valid email");     
      }else{
           // Code for the push
     dataRef.ref().push({
@@ -62,7 +63,7 @@ console.log('button clicked')
     $("#phone").val("");
     $("#slackuser").val("");
     $("#website").val("");
-    alert("add to server database");
+
   }
 });
 
