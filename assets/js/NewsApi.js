@@ -10,7 +10,7 @@ $.ajax({
     for (var i = 0 ; i < Newsresponse.articles.length; i++){
       const {description, url} = Newsresponse.articles[i]
       var ptemplate = `<p> Articles:${description} </p>
-      <p><a href="${url}">${url}</a></p>`
+      <p><a href="${url}" target="_blank" alt="coin article">${url}</a></p>`
       $('#first').append(ptemplate);
           
     }

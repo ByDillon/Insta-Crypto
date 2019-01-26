@@ -15,18 +15,19 @@
 	  }
 	  
 	  /* Set black background color, white text and some padding */
-	  .bottom {
+	  #bottom {
 			background-color: #555;
 			color: white;
 			padding: 15px;
 		 position: fixed;
 			bottom: 0;
-			width: 2020px;
+			width: 2005px;
 			height: 20px;
 			left: 0;
 			opacity: 0.5;
 			margin-top: 50px;
-			border-radius: 0;
+			border-radius: 10px;
+			text-align: left;
 	
 	  }
 	  
@@ -42,6 +43,7 @@
 		form {
 			text-align: center;
 			font-size:12px;
+			padding: 35px;
 		}
 		#contact p,
 		label,
