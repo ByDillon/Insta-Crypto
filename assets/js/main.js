@@ -37,8 +37,17 @@ console.log('button clicked')
       website: website,
       dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
+    clearForm();
   });
 
+
+function clearForm() {
+  $("#name").val("");
+  $("#email").val("");
+  $("#phone").val("");
+  $("#slackuser").val("");
+  $("#website").val("");
+}
   // Firebase watcher + initial loader HINT: This code behaves similarly to .on("value") to use in the email server
   // TODO work on automatically emailing new customers.
   //dataRef.ref().on("child_added", function(childSnapshot) {

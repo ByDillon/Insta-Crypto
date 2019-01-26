@@ -42,11 +42,7 @@
   
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div class="col-sm-4 sidenav">
-      
-    
-      
-     
+    <div class="col-sm-4 sidenav">     
           <!-- Table -->
           <table class="table table-hover table-striped" id="coinsTbl">
           
@@ -60,18 +56,17 @@
 
                   <!--add coins here-->
               </tbody>
+            </tr>
           </table>
-      </div>
+    </div>
     
-
-  
     <div class="col-sm-5 text-left"> 
 
       <h1>INSTACrypto</h1>
 
       <div class='row' id='first'></div>
-      <div class='row' >
-        <form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
+  <div class='row' >
+    <form method="post" action="" name="contactform" id="contactform" autocomplete="on">
 
 				<legend>Connect With Our Platform</legend>
 
@@ -81,8 +76,7 @@
 				</div>
 				<div>
 					<label for="email" accesskey="E">Email</label>
-					<input name="email" type="email" id="email" placeholder="Enter your Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$"
-					 required="required" />
+					<input name="email" type="email"  class="form-control" id="email" placeholder="Enter your Email Address" required="required" />
 				</div>
 
 				<div>
@@ -93,11 +87,8 @@
 				<div>
 					<label for="slackuser" accesskey="W">Slack Username <small>(optional)</small></label>
 					<input name="slackuser" type="text" id="slackuser" placeholder="Enter your slack user" />
-				</div>
-				<div>
-					<label for="website" accesskey="W">Website <small>(optional)</small></label>
-					<input name="website" type="url" id="website" placeholder="Enter your website address" />
-				</div>
+        </div>
+        
 				<div>
 					<label for="website" accesskey="W">Website <small>(optional)</small></label>
 					<input name="website" type="url" id="website" placeholder="Enter your website address" />
@@ -116,7 +107,7 @@
         <footer>
           <p>© Group 5 Class Project. All Rights Reserved UCF CODING BOOTCAMP</p>
         </footer>
-      </div>
+    </div>
     
   
  </div>
@@ -145,6 +136,7 @@
 		<mark id="message"></mark>
     
   </section>
+  </div>
   </div>
 
 
